@@ -16,15 +16,16 @@ class LoginScreenController: UIViewController {
     
     @IBOutlet var loginButton: UIButton!
     
-    @IBOutlet var nameRecoveryButton: UIButton!
-    @IBOutlet var passwordRecoveryButton: UIButton!
+    @IBOutlet var recoveryButtons: [UIButton]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    
 }
 
