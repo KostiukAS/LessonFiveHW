@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8456B1CD2624B82800E08FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1CC2624B82800E08FA5 /* AppDelegate.swift */; };
 		8456B1CF2624B82800E08FA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1CE2624B82800E08FA5 /* SceneDelegate.swift */; };
-		8456B1D12624B82800E08FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1D02624B82800E08FA5 /* ViewController.swift */; };
+		8456B1D12624B82800E08FA5 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1D02624B82800E08FA5 /* LoginScreenController.swift */; };
 		8456B1D42624B82800E08FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456B1D22624B82800E08FA5 /* Main.storyboard */; };
 		8456B1D62624B82900E08FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8456B1D52624B82900E08FA5 /* Assets.xcassets */; };
 		8456B1D92624B82900E08FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456B1D72624B82900E08FA5 /* LaunchScreen.storyboard */; };
+		8456B1E72624C56C00E08FA5 /* NameRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1E62624C56C00E08FA5 /* NameRecoveryController.swift */; };
+		8456B1F12624C90700E08FA5 /* PasswordRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */; };
+		8456B1F42624C92500E08FA5 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F32624C92500E08FA5 /* MainScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8456B1C92624B82800E08FA5 /* LessonFiveHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonFiveHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8456B1CC2624B82800E08FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8456B1CE2624B82800E08FA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8456B1D02624B82800E08FA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8456B1D02624B82800E08FA5 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		8456B1D32624B82800E08FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8456B1D52624B82900E08FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8456B1D82624B82900E08FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8456B1DA2624B82900E08FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8456B1E62624C56C00E08FA5 /* NameRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRecoveryController.swift; sourceTree = "<group>"; };
+		8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryController.swift; sourceTree = "<group>"; };
+		8456B1F32624C92500E08FA5 /* MainScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,82 @@
 		8456B1CB2624B82800E08FA5 /* LessonFiveHW */ = {
 			isa = PBXGroup;
 			children = (
-				8456B1CC2624B82800E08FA5 /* AppDelegate.swift */,
-				8456B1CE2624B82800E08FA5 /* SceneDelegate.swift */,
-				8456B1D02624B82800E08FA5 /* ViewController.swift */,
-				8456B1D22624B82800E08FA5 /* Main.storyboard */,
-				8456B1D52624B82900E08FA5 /* Assets.xcassets */,
-				8456B1D72624B82900E08FA5 /* LaunchScreen.storyboard */,
+				8456B1EE2624C76C00E08FA5 /* Delegates */,
+				8456B1ED2624C72700E08FA5 /* Storyboards */,
+				8456B1EC2624C6DE00E08FA5 /* ViewControllers */,
+				8456B1E22624B95400E08FA5 /* Assets */,
 				8456B1DA2624B82900E08FA5 /* Info.plist */,
 			);
 			path = LessonFiveHW;
+			sourceTree = "<group>";
+		};
+		8456B1E12624B89E00E08FA5 /* LaunchScreenStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1D72624B82900E08FA5 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreenStoryboard;
+			sourceTree = "<group>";
+		};
+		8456B1E22624B95400E08FA5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1D52624B82900E08FA5 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8456B1E42624B98400E08FA5 /* AppStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1D22624B82800E08FA5 /* Main.storyboard */,
+			);
+			path = AppStoryboard;
+			sourceTree = "<group>";
+		};
+		8456B1EA2624C69600E08FA5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1CC2624B82800E08FA5 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8456B1EB2624C6AE00E08FA5 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1CE2624B82800E08FA5 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		8456B1EC2624C6DE00E08FA5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1E62624C56C00E08FA5 /* NameRecoveryController.swift */,
+				8456B1D02624B82800E08FA5 /* LoginScreenController.swift */,
+				8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */,
+				8456B1F32624C92500E08FA5 /* MainScreenController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8456B1ED2624C72700E08FA5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1E12624B89E00E08FA5 /* LaunchScreenStoryboard */,
+				8456B1E42624B98400E08FA5 /* AppStoryboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8456B1EE2624C76C00E08FA5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8456B1EA2624C69600E08FA5 /* AppDelegate */,
+				8456B1EB2624C6AE00E08FA5 /* SceneDelegate */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8456B1D12624B82800E08FA5 /* ViewController.swift in Sources */,
+				8456B1D12624B82800E08FA5 /* LoginScreenController.swift in Sources */,
 				8456B1CD2624B82800E08FA5 /* AppDelegate.swift in Sources */,
+				8456B1F42624C92500E08FA5 /* MainScreenController.swift in Sources */,
+				8456B1F12624C90700E08FA5 /* PasswordRecoveryController.swift in Sources */,
 				8456B1CF2624B82800E08FA5 /* SceneDelegate.swift in Sources */,
+				8456B1E72624C56C00E08FA5 /* NameRecoveryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
