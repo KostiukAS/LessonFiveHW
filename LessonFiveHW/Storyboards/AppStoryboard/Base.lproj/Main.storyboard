@@ -230,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="T4q-r3-yb9">
-                                <rect key="frame" x="16" y="183.5" width="288" height="157"/>
+                                <rect key="frame" x="16" y="143.5" width="288" height="157"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To verify your personality, please enter your email adress:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-Zg-QYb">
                                         <rect key="frame" x="17.5" y="0.0" width="253" height="41"/>
@@ -266,7 +266,7 @@
                             <constraint firstItem="T4q-r3-yb9" firstAttribute="leading" secondItem="PP5-Vn-GwP" secondAttribute="leading" constant="16" id="3jW-hi-sUv"/>
                             <constraint firstItem="T4q-r3-yb9" firstAttribute="centerX" secondItem="Kq6-9W-qzp" secondAttribute="centerX" id="EBR-zJ-3fH"/>
                             <constraint firstAttribute="trailing" secondItem="T4q-r3-yb9" secondAttribute="trailing" constant="16" id="bgb-Nk-UgG"/>
-                            <constraint firstItem="T4q-r3-yb9" firstAttribute="centerY" secondItem="Kq6-9W-qzp" secondAttribute="centerY" id="s6L-0Z-3eu"/>
+                            <constraint firstItem="T4q-r3-yb9" firstAttribute="centerY" secondItem="Kq6-9W-qzp" secondAttribute="centerY" constant="-40" id="s6L-0Z-3eu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="agj-5D-aYD"/>
@@ -295,7 +295,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QZZ-1s-GD9"/>
+        <segue reference="jIQ-EC-pTw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
