@@ -9,10 +9,6 @@ import UIKit
 
 class InstructionScreenController: UIViewController {
     
-    // MARK: - IBOutlets
-    
-    @IBOutlet var recoveryExitButton: UIButton!
-    
     // MARK: - Functions
     
     override func viewDidLoad() {
@@ -20,7 +16,6 @@ class InstructionScreenController: UIViewController {
 
     }
     
-    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {}
     
     /*
     // MARK: - Navigation
