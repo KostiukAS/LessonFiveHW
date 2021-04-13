@@ -54,7 +54,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Forgot user name?"/>
                                                 <connections>
-                                                    <segue destination="Kgz-ai-2fV" kind="presentation" identifier="nameRecoverySegue" id="K6i-AA-Y1l"/>
+                                                    <segue destination="Kgz-ai-2fV" kind="show" identifier="nameRecoverySegue" id="K6i-AA-Y1l"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xs-Ch-Agm">
@@ -62,7 +62,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Forgot password?"/>
                                                 <connections>
-                                                    <segue destination="wvU-D3-0P7" kind="presentation" identifier="passwordRecoverySegue" id="XTa-Ug-97J"/>
+                                                    <segue destination="wvU-D3-0P7" kind="show" identifier="passwordRecoverySegue" id="XTa-Ug-97J"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -98,11 +98,11 @@
             <objects>
                 <viewController title="Password Recovery Screen" id="wvU-D3-0P7" customClass="PasswordRecoveryController" customModule="LessonFiveHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="3" contentMode="scaleToFill" id="T6r-M6-JDW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="A6t-1R-Hqu">
-                                <rect key="frame" x="29" y="106.5" width="262" height="163.5"/>
+                                <rect key="frame" x="29" y="138.5" width="262" height="163.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name and email adress:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cK9-7c-nyP">
                                         <rect key="frame" x="0.0" y="0.0" width="262" height="20.5"/>
@@ -118,14 +118,14 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNW-Y0-SQr">
                                         <rect key="frame" x="0.0" y="84.5" width="262" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvK-l8-XQt">
                                         <rect key="frame" x="0.0" y="133.5" width="262" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <state key="normal" title="Confirm"/>
                                         <connections>
-                                            <segue destination="GEM-1x-3oG" kind="show" id="QZZ-1s-GD9"/>
+                                            <segue destination="GEM-1x-3oG" kind="show" id="dRb-jn-2XJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -196,50 +196,28 @@
             <objects>
                 <viewController title="Instruction screen" id="GEM-1x-3oG" customClass="InstructionScreenController" customModule="LessonFiveHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efJ-uy-oad">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-oh-auU">
-                                <rect key="frame" x="16" y="185" width="288" height="90"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send instructions on your email." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyH-Tf-FMc">
-                                        <rect key="frame" x="36" y="0.0" width="216.5" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9G-cH-q6c">
-                                        <rect key="frame" x="36" y="60" width="216.5" height="30"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Ok">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="ykz-3k-eUp" kind="unwind" unwindAction="unwindSegue:" id="HmJ-YS-ctq"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="S9G-cH-q6c" firstAttribute="leading" secondItem="EyH-Tf-FMc" secondAttribute="leading" id="Tvz-5t-nm9"/>
-                                </constraints>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send instructions on your email." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyH-Tf-FMc">
+                                <rect key="frame" x="10.5" y="252" width="299" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gsh-GY-9fA"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="ccn-oh-auU" firstAttribute="centerX" secondItem="Gsh-GY-9fA" secondAttribute="centerX" id="A4t-Ar-Pre"/>
-                            <constraint firstItem="Gsh-GY-9fA" firstAttribute="trailing" secondItem="ccn-oh-auU" secondAttribute="trailing" constant="16" id="fS6-Pq-9E2"/>
-                            <constraint firstItem="ccn-oh-auU" firstAttribute="centerY" secondItem="Gsh-GY-9fA" secondAttribute="centerY" id="lBU-aP-hAo"/>
-                            <constraint firstItem="ccn-oh-auU" firstAttribute="leading" secondItem="Gsh-GY-9fA" secondAttribute="leading" constant="16" id="oRH-0B-HDD"/>
+                            <constraint firstItem="Gsh-GY-9fA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EyH-Tf-FMc" secondAttribute="trailing" id="8ze-bp-bG4"/>
+                            <constraint firstItem="EyH-Tf-FMc" firstAttribute="centerY" secondItem="Gsh-GY-9fA" secondAttribute="centerY" id="KQj-kt-oOB"/>
+                            <constraint firstItem="EyH-Tf-FMc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gsh-GY-9fA" secondAttribute="leading" id="Y9K-r0-ieB"/>
+                            <constraint firstItem="EyH-Tf-FMc" firstAttribute="centerX" secondItem="Gsh-GY-9fA" secondAttribute="centerX" id="ldv-6T-XMD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BE3-R9-ern"/>
-                    <connections>
-                        <outlet property="recoveryExitButton" destination="S9G-cH-q6c" id="mHj-4w-swC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWm-Ns-MeN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="ykz-3k-eUp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2676" y="-623"/>
         </scene>
@@ -248,11 +226,11 @@
             <objects>
                 <viewController title="Name Recovery Screen" id="Kgz-ai-2fV" customClass="NameRecoveryController" customModule="LessonFiveHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="2" contentMode="scaleToFill" id="PP5-Vn-GwP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="T4q-r3-yb9">
-                                <rect key="frame" x="16" y="111.5" width="288" height="157"/>
+                                <rect key="frame" x="16" y="143.5" width="288" height="157"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To verify your personality, please enter your email adress:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-Zg-QYb">
                                         <rect key="frame" x="17.5" y="0.0" width="253" height="41"/>
@@ -260,10 +238,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2n-y1-6GY">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2n-y1-6GY">
                                         <rect key="frame" x="17.5" y="67" width="253" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNA-sH-GCX">
                                         <rect key="frame" x="17.5" y="127" width="253" height="30"/>
@@ -317,7 +295,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jIQ-EC-pTw"/>
+        <segue reference="dRb-jn-2XJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
