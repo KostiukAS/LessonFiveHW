@@ -17,7 +17,6 @@
 		8456B1F12624C90700E08FA5 /* PasswordRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */; };
 		8456B1F42624C92500E08FA5 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F32624C92500E08FA5 /* MainScreenController.swift */; };
 		8456B1F7262556B200E08FA5 /* InstructionScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F6262556B200E08FA5 /* InstructionScreenController.swift */; };
-		8456B1FB26255F1900E08FA5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1FA26255F1900E08FA5 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryController.swift; sourceTree = "<group>"; };
 		8456B1F32624C92500E08FA5 /* MainScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
 		8456B1F6262556B200E08FA5 /* InstructionScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionScreenController.swift; sourceTree = "<group>"; };
-		8456B1FA26255F1900E08FA5 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 		8456B1CB2624B82800E08FA5 /* LessonFiveHW */ = {
 			isa = PBXGroup;
 			children = (
-				8456B1F926255EE000E08FA5 /* Classes */,
 				8456B1EE2624C76C00E08FA5 /* Delegates */,
 				8456B1ED2624C72700E08FA5 /* Storyboards */,
 				8456B1EC2624C6DE00E08FA5 /* ViewControllers */,
@@ -146,14 +143,6 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		8456B1F926255EE000E08FA5 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8456B1FA26255F1900E08FA5 /* UserData.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,7 +215,6 @@
 			files = (
 				8456B1D12624B82800E08FA5 /* LoginScreenController.swift in Sources */,
 				8456B1F7262556B200E08FA5 /* InstructionScreenController.swift in Sources */,
-				8456B1FB26255F1900E08FA5 /* UserData.swift in Sources */,
 				8456B1CD2624B82800E08FA5 /* AppDelegate.swift in Sources */,
 				8456B1F42624C92500E08FA5 /* MainScreenController.swift in Sources */,
 				8456B1F12624C90700E08FA5 /* PasswordRecoveryController.swift in Sources */,

@@ -18,21 +18,15 @@ class LoginScreenController: UIViewController {
     
     @IBOutlet var recoveryButtons: [UIButton]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func loginButtonPressed() {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userName = nameTextField.text else { return }
-        
-        
-        
     }
-    
     
 }
 

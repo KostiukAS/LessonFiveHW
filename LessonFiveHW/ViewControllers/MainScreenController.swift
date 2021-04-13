@@ -14,10 +14,9 @@ class MainScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainScreenNameLabel.text = ""
+        mainScreenNameLabel.text = "!"
         
     }
-    
     
     
 
