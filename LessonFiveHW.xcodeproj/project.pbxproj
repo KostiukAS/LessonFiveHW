@@ -16,6 +16,7 @@
 		8456B1E72624C56C00E08FA5 /* NameRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1E62624C56C00E08FA5 /* NameRecoveryController.swift */; };
 		8456B1F12624C90700E08FA5 /* PasswordRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */; };
 		8456B1F42624C92500E08FA5 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F32624C92500E08FA5 /* MainScreenController.swift */; };
+		8456B1F7262556B200E08FA5 /* InstructionScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1F6262556B200E08FA5 /* InstructionScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8456B1E62624C56C00E08FA5 /* NameRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRecoveryController.swift; sourceTree = "<group>"; };
 		8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryController.swift; sourceTree = "<group>"; };
 		8456B1F32624C92500E08FA5 /* MainScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
+		8456B1F6262556B200E08FA5 /* InstructionScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				8456B1D02624B82800E08FA5 /* LoginScreenController.swift */,
 				8456B1F02624C90700E08FA5 /* PasswordRecoveryController.swift */,
 				8456B1F32624C92500E08FA5 /* MainScreenController.swift */,
+				8456B1F6262556B200E08FA5 /* InstructionScreenController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8456B1D12624B82800E08FA5 /* LoginScreenController.swift in Sources */,
+				8456B1F7262556B200E08FA5 /* InstructionScreenController.swift in Sources */,
 				8456B1CD2624B82800E08FA5 /* AppDelegate.swift in Sources */,
 				8456B1F42624C92500E08FA5 /* MainScreenController.swift in Sources */,
 				8456B1F12624C90700E08FA5 /* PasswordRecoveryController.swift in Sources */,
