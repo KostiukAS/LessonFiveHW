@@ -9,7 +9,11 @@ import UIKit
 
 class InstructionScreenController: UIViewController {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet var recoveryExitButton: UIButton!
+    
+    // MARK: - Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()

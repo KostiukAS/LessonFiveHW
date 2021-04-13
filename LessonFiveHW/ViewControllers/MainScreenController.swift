@@ -9,12 +9,20 @@ import UIKit
 
 class MainScreenController: UIViewController {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet var mainScreenNameLabel: UILabel!
+    
+    // MARK: - Public properties
+    
+    var name: String!
+    
+    // MARK: - Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainScreenNameLabel.text = "!"
+        mainScreenNameLabel.text = "\(self.name!)!"
         
     }
     

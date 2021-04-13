@@ -18,6 +18,8 @@ class LoginScreenController: UIViewController {
     
     @IBOutlet var recoveryButtons: [UIButton]!
     
+    // MARK: - Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,7 +27,10 @@ class LoginScreenController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let userName = nameTextField.text else { return }
+        guard let name = nameTextField.text else { return }
+        guard segue.identifier == "loginSegue" else { return }
+        let mainVC = segue.destination as! MainScreenController
+        mainVC.name = name
     }
     
 }
